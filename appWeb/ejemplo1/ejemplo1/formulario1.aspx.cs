@@ -13,5 +13,11 @@ namespace ejemplo1
         {
 
         }
+
+        protected void btnAceptar_Click(object sender, EventArgs e)
+        {
+            lblMensaje.Text = "Bienvenido/a " + txtNombre.Text;
+            txtNombre.Text = string.Empty;
+        }
     }
 }

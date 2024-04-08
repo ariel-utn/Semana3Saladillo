@@ -10,7 +10,15 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <p>HOLA MUNDO</p>
+            <p>Ingrese su nombre:&nbsp;&nbsp;
+                <asp:TextBox ID="txtNombre"  runat="server" Font-Bold="True"></asp:TextBox>
+            &nbsp;
+                <asp:Button ID="btnAceptar" runat="server" Text="Aceptar" OnClick="btnAceptar_Click" />
+            </p>
+            <p>
+                <asp:Label ID="lblMensaje" runat="server" Text=""></asp:Label>
+            </p>
+            <p>&nbsp;</p>
         </div>
     </form>
 </body>
